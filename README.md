@@ -48,12 +48,3 @@ src/
 ├── index.css                  # Global design tokens (fonts, colors, resets)
 └── main.jsx                   # React root entry point
 
-
-
-
-Production Build
-To build the static assets for production deployment:
-
-bash
-npm run build
-The build assets will be generated in the dist/ directory, optimized and ready for hosting.

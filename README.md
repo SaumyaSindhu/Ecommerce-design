@@ -1,16 +1,81 @@
-# React + Vite
+# Eco-Mart — Premium E-Commerce Storefront
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Eco-Mart is a pixel-perfect, modern, and highly responsive e-commerce storefront built using **React**, **Vite**, and **pure CSS** (without external frameworks like Tailwind, ensuring maximum style control and optimized bundle sizes).
 
-Currently, two official plugins are available:
+The project replicates high-fidelity designs with fluid hover transitions, interactive elements, a modular layout structure, and is designed to provide a premium user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Responsive Header System**: Features a top announcement bar with a language picker and a sticky navigation header equipped with a search bar and interactive count badges.
+*   **Hero Section**: Integrates an elegant categories sidebar aligned with a full-bleed promotional banner.
+*   **Flash Sales Rail**: Features a dynamic, live countdown timer and a smooth, swipeable horizontal product scroll container with custom navigation arrows.
+*   **Browse by Category**: An interactive horizontal selector showcasing specific product categories.
+*   **Best Sellers & Explore Products**: Includes dynamic product lists complete with rating calculations, discount tags, and active category filtering tabs.
+*   **Featured New Arrivals**: A masonry-style CSS grid layout featuring full-bleed hover scaling and overlay effects.
+*   **Download App & Footer Section**: Includes a grid-based footer featuring a mock QR code and store badges cropped to fit their container borders perfectly.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+*   **Core**: React 18+ & JavaScript (ES6+)
+*   **Build Tool**: Vite (Fast HMR & Dev Server)
+*   **Styling**: Pure CSS3 (CSS Variables, Flexbox, CSS Grid)
+*   **Icons**: `react-icons`
+
+---
+
+## 📁 Directory Structure
+
+```text
+src/
+├── assets/                    # Image and media assets
+├── components/
+│   ├── AnnouncementBar/       # Announcement banner styles & markup
+│   ├── Navbar/                # Sticky header & responsive menu
+│   ├── HeroBanner/            # Sidebar categories & main hero image
+│   ├── FlashSales/            # Countdown timer & sliding product rail
+│   ├── BrowseByCategory/      # Horizontal category list
+│   ├── BestSelling/           # Best selling products section
+│   ├── ExploreProducts/       # Explore products section with category filters
+│   ├── NewArrival/            #Masonry-style grids with scale transitions
+│   ├── ProductCard/           # Reusable product card component
+│   └── Footer/                # Multi-column footer and app badges
+├── App.css                    # Structural page layout
+├── App.jsx                    # Core page orchestrator
+├── index.css                  # Global design tokens (fonts, colors, resets)
+└── main.jsx                   # React root entry point
+
+
+💻 Getting Started
+Prerequisites
+Ensure you have Node.js installed (v16.0.0 or higher is recommended).
+
+Installation
+Clone the repository:
+
+bash
+git clone https://github.com/SaumyaSindhu/Ecommerce-design.git
+Navigate to the project directory:
+
+bash
+cd Ecommerce-design
+Install project dependencies:
+
+bash
+npm install
+Running Locally
+To run the development server:
+
+bash
+npm run dev
+The application will start, and the local URL (usually http://localhost:5173/) will be displayed in your terminal.
+
+Production Build
+To build the static assets for production deployment:
+
+bash
+npm run build
+The build assets will be generated in the dist/ directory, optimized and ready for hosting.

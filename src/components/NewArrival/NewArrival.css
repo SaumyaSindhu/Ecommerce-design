@@ -1,0 +1,260 @@
+.new-arrival-section {
+  padding: 48px 0 64px;
+}
+
+.new-arrival-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.featured-card {
+  position: relative;
+  background: #0d0d0d;
+  border-radius: var(--radius-md);
+  height: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+  transition: var(--transition);
+}
+
+.featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.featured-bg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(100, 100, 255, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.featured-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.featured-content {
+  position: relative;
+  z-index: 10;
+}
+
+.featured-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.featured-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 12px;
+  max-width: 260px;
+}
+
+.featured-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  padding-bottom: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s, opacity 0.2s;
+}
+
+.featured-link:hover {
+  gap: 12px;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.featured-card .card-actions,
+.side-card .card-actions {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.featured-card .action-btn,
+.side-card .action-btn {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+
+.featured-card .action-btn:hover,
+.side-card .action-btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.new-arrival-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.side-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  transition: var(--transition);
+  min-height: 240px;
+}
+
+.side-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.women-card {
+  background: #1a0a1a;
+  min-height: 260px;
+}
+
+.side-card-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #2a1a2a 0%, #1a0a1a 100%);
+}
+
+.side-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.side-card-img-sm {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.side-card-content {
+  position: relative;
+  z-index: 10;
+}
+
+.side-card-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.side-card-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 10px;
+}
+
+.side-card .card-actions {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.side-card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.bottom-card {
+  background: #0d0d0d;
+  min-height: 220px;
+}
+
+.new-badge {
+  background: #00a36c !important;
+}
+
+@media (max-width: 1024px) {
+  .featured-card {
+    min-height: 420px;
+  }
+  .featured-img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .new-arrival-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .new-arrival-featured {
+    order: 1;
+  }
+
+  .new-arrival-right {
+    order: 2;
+  }
+
+  .featured-card {
+    min-height: 320px;
+  }
+
+  .featured-img {
+    max-height: 240px;
+  }
+
+  .featured-name {
+    font-size: 20px;
+  }
+
+  .side-card {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .side-card-row {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-card {
+    min-height: 180px;
+  }
+
+  .featured-card {
+    min-height: 280px;
+  }
+}

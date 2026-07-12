@@ -1,0 +1,43 @@
+.best-selling-section {
+  padding: 48px 0;
+}
+
+.best-selling-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.best-selling-view-all {
+  display: flex;
+  justify-content: center;
+}
+
+.music-banner {
+  margin-top: 48px;
+}
+
+.music-banner img {
+  border-radius: 4px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .best-selling-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .best-selling-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .best-selling-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}

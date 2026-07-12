@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/2a14e8c1-2d0f-4f68-8003-b683acfaea97
+
 # Eco-Mart — Premium E-Commerce Storefront
 
 Eco-Mart is a pixel-perfect, modern, and highly responsive e-commerce storefront built using **React**, **Vite**, and **pure CSS** (without external frameworks like Tailwind, ensuring maximum style control and optimized bundle sizes).

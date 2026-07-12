@@ -49,29 +49,7 @@ src/
 └── main.jsx                   # React root entry point
 
 
-💻 Getting Started
-Prerequisites
-Ensure you have Node.js installed (v16.0.0 or higher is recommended).
 
-Installation
-Clone the repository:
-
-bash
-git clone https://github.com/SaumyaSindhu/Ecommerce-design.git
-Navigate to the project directory:
-
-bash
-cd Ecommerce-design
-Install project dependencies:
-
-bash
-npm install
-Running Locally
-To run the development server:
-
-bash
-npm run dev
-The application will start, and the local URL (usually http://localhost:5173/) will be displayed in your terminal.
 
 Production Build
 To build the static assets for production deployment:
